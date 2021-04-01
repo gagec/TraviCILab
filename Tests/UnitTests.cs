@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using NUnit.Framework;
 
 namespace TravisCILab
@@ -106,7 +106,7 @@ namespace TravisCILab
         {
             Assert.AreEqual(16, Program.Power("2", "4"));
             Assert.AreEqual(125, Program.Power("5", "3"));
-            Assert.AreEqual(10, Program.Power("2", "8")); // destined to fail
+            Assert.AreEqual(8, Program.Power("2", "3"));
         }
 
         [Test]

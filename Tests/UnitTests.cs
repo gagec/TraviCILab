@@ -29,6 +29,7 @@ namespace TravisCILab
             Assert.Throws<ArgumentNullException>(() => Program.Add(null, "1"));
             Assert.Throws<ArgumentNullException>(() => Program.Add(null, null));
         }
+        [Test]
          public void Subtract_ValidCrowell()
         {
             Assert.AreEqual(3, Program.Subtract("9", "6"));
@@ -52,7 +53,8 @@ namespace TravisCILab
             Assert.Throws<ArgumentNullException>(() => Program.Subtract(null, null));
         }
         // Implement 3 tests per operation, following a similar pattern as above
-         public void Multiply_ValidCrowell()
+         [Test]
+        public void Multiply_ValidCrowell()
         {
             Assert.AreEqual(100, Program.Multiply("10", "10"));
             Assert.AreEqual(4, Program.Multiply("1", "4"));
@@ -75,6 +77,7 @@ namespace TravisCILab
             Assert.Throws<ArgumentNullException>(() => Program.Multiply(null, null));
         }
         
+        [Test]
          public void Divide_ValidCrowell()
         {
             Assert.AreEqual(5, Program.Divide("10", "2"));
@@ -98,6 +101,7 @@ namespace TravisCILab
             Assert.Throws<ArgumentNullException>(() => Program.Divide(null, null));
         }
         
+        [Test]
          public void Power_ValidCrowell()
         {
             Assert.AreEqual(16, Program.Power("2", "4"));
